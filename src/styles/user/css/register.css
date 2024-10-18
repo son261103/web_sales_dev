@@ -1,0 +1,171 @@
+/* Root variables (colors unchanged) */
+:root {
+  --primary-pink: #ff69b4; /* Primary Pink */
+  --light-pink: #ffc0cb; /* Light Pink */
+  --hover-pink: #ff1493; /* Hover Pink */
+  --dark-pink: #db7093; /* Dark Pink */
+  --white: #ffffff; /* White */
+  --light-gray: #f8f9fa; /* Light Gray */
+  --medium-gray: #e9ecef; /* Medium Gray */
+  --dark-gray: #343a40; /* Dark Gray */
+  --font-main: "Roboto", sans-serif; /* Main font */
+  --font-accent: "Montserrat", sans-serif; /* Accent font */
+  --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Box shadow */
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Transition effect */
+  --border-radius: 8px; /* Border radius */
+  --input-border-focus: 1px solid var(--primary-pink); /* Input border focus color */
+}
+
+/* Body */
+body {
+  background-color: var(--light-gray); /* Background color */
+  font-family: var(--font-main); /* Main font */
+  color: var(--dark-gray); /* Text color */
+}
+
+/* Enhanced gradient background */
+.login-container {
+  margin: 5rem auto; /* Centering */
+  padding: 2rem; /* Padding */
+  background: linear-gradient(
+    135deg,
+    var(--light-pink) 0%,
+    var(--primary-pink) 100%
+  ); /* Gradient background */
+  border-radius: var(--border-radius); /* Border radius */
+  box-shadow: var(--box-shadow); /* Box shadow */
+}
+
+.login-container > .row {
+  height: calc(100% - 20%) !important; /* Row height */
+  background-color: transparent; /* Transparent background */
+  animation-duration: 1.5s; /* Animation duration */
+}
+
+/* Login Form */
+.login-form {
+  background-color: var(--white); /* Form background color */
+  padding: 3rem; /* Padding */
+  border-radius: var(--border-radius); /* Border radius */
+  animation-duration: 1.5s; /* Animation duration */
+}
+
+.login-form h1 {
+  font-family: var(--font-accent); /* Accent font */
+  font-weight: 700; /* Font weight */
+  color: var(--primary-pink); /* Heading color */
+  text-align: center; /* Centered text */
+  margin-bottom: 2rem; /* Bottom margin */
+}
+
+/* Floating labels with more focus effects */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  transform: scale(0.85) translateY(-1.5rem); /* Label transformation */
+  color: var(--primary-pink); /* Label color on focus */
+}
+
+.form-floating > .form-control {
+  padding: 1.25rem 0.75rem; /* Padding */
+  background-color: var(--light-gray); /* Background color */
+  border: none; /* No border */
+  border-radius: var(--border-radius); /* Border radius */
+  box-shadow: var(--box-shadow); /* Box shadow */
+  transition: var(--transition); /* Transition */
+}
+
+.form-floating > .form-control:focus {
+  outline: none; /* No outline */
+  border: var(--input-border-focus); /* Border on focus */
+  background-color: var(--white); /* Change background color on focus */
+}
+
+.form-floating > label {
+  color: var(--dark-gray); /* Label color */
+  padding-left: 2.5rem; /* Padding */
+  transition: var(--transition); /* Transition */
+}
+
+.form-floating i {
+  position: absolute; /* Positioning */
+  left: 15px; /* Left positioning */
+  top: 50%; /* Centered vertically */
+  transform: translateY(-50%); /* Centering */
+  color: var(--primary-pink); /* Icon color */
+  pointer-events: none; /* Ignore pointer events */
+}
+
+/* Social login buttons with enhanced design */
+.social-login .social-icon {
+  width: 60px; /* Width */
+  height: 60px; /* Height */
+  background-color: var(--white); /* Background color */
+  border-radius: 10px; /* Circular shape */
+  border: 1px solid var(--medium-gray); /* Border */
+  padding: 10px; /* Padding */
+  display: flex; /* Flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin: 0rem 1.5rem; /* Margin */
+}
+
+.social-login .social-icon i {
+  font-size: 1.5rem; /* Icon size */
+  color: var(--primary-pink); /* Icon color */
+  transition: var(--transition); /* Transition */
+}
+
+.social-login .social-icon:hover {
+  background-color: var(--light-pink); /* Background on hover */
+}
+
+.social-login .social-icon:hover i {
+  color: var (--white); /* Icon color on hover */
+}
+
+/* Buttons */
+.login-form .btn-primary {
+  background-color: var(--primary-pink); /* Button background color */
+  border: none; /* No border */
+  padding: 0.75rem 1.5rem; /* Padding */
+  border-radius: var(--border-radius); /* Border radius */
+  transition: var(--transition); /* Transition */
+  font-weight: 500; /* Font weight */
+  font-size: 1rem; /* Font size */
+}
+
+.login-form .btn-primary:hover {
+  background-color: var(--hover-pink); /* Background on hover */
+  transform: scale(1.02); /* Slight scaling on hover */
+}
+
+.login-form .btn-primary:active {
+  background-color: var(--dark-pink); /* Background on active */
+}
+
+.login-form a {
+  color: var(--primary-pink); /* Link color */
+  transition: var(--transition); /* Transition */
+}
+
+.login-form a:hover {
+  color: var(--hover-pink); /* Link color on hover */
+}
+
+.login-image {
+  display: flex; /* Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Full height */
+}
+
+.login-image img {
+  border-radius: var(--border-radius); /* Image border radius */
+  box-shadow: var(--box-shadow); /* Image box shadow */
+  transition: transform 0.3s ease; /* Image transition */
+}
+
+#gender-label > select{
+  color: var(--primary-pink);
+  margin: 20px 0;
+}
